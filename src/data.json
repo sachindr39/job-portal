@@ -1,0 +1,30 @@
+[
+    {
+        "name": "Web Publisher",
+        "description": "A minimum of 1 + years of general computer use, knowledge of operating systems A high l...",
+        "company": "Lionbridge",
+        "ratings": 3.9,
+        "reviews": 373,
+        "experience": "1-3 Yrs",
+        "salary": "Not disclosed",
+        "location": "Navi Mumbai",
+        "skills": [ "wordpress cms", "Javascript", "html", "SEO", "development", "CSS" ],
+        "date": "5-8-2022",
+        "wfh": true,
+        "logo": ""
+    },
+    {
+        "name": "Junior React Developer",
+        "description": "A minimum of 1 + years of general computer use, knowledge of operating systems A high l...",
+        "company": "Lionbridge",
+        "ratings": 5,
+        "reviews": 373,
+        "experience": "1-3 Yrs",
+        "salary": "Not disclosed",
+        "location": "Navi Mumbai",
+        "skills": [ "html", "SEO", "development", "CSS" ],
+        "date": "5-8-2022",
+        "wfh": false,
+        "logo": "https://img.naukimg.com/logo_images/groups/v1/4615451.gif"
+    }   
+]
