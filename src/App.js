@@ -14,28 +14,42 @@ function App() {
 			<div class="col contents">
 				<div class="summery">1 - 20 of 6781 React.Js Jobs In Pune</div>
 				<div class="jobs">
-					<div class="job">
-						<h2 class="job-title">Junior React Developer</h2>
-						<img src="https://img.naukimg.com/logo_images/groups/v1/4615451.gif" />
-						<div class="company-name"><a href="#">Lionbridge</a></div>
-						<div class="job-meta">
-							<div class="exp">1-3 Yrs</div>
-							<div class="salary">Not disclosed</div>
-							<div class="loc">Navi Mumbai</div>
-						</div>
-						<div class="job-description">A minimum of 1 + years of general computer use, knowledge of operating systems
-							A high l...</div>
-						<div class="skills">
-							<div class="skill">html</div>
-							<div class="skill">SEO</div>
-							<div class="skill">development</div>
-							<div class="skill">CSS</div>
-						</div>
-						<div class="job-footer">
-							<div class="job-date">5-8-2022</div>
-							<div class="save">Save</div>
-						</div>
-					</div>
+					{
+						JOBS.map(job => {
+							return (
+								<div class="job">
+									<h2 class="job-title">{job.name}</h2>
+									
+									{
+										job.logo && (
+											<img src={job.logo} />
+										)
+									}
+									
+									<div class="company-name"><a href="#">{job.company}</a></div>
+									<div class="job-meta">
+										<div class="exp">{job.experience}</div>
+										<div class="salary">{job.salary}</div>
+										<div class="loc">{job.location}</div>
+									</div>
+									<div class="job-description">{job.description}</div>
+									<div class="skills">
+										{
+											job.skills.map(skill => {
+												return (
+													<div class="skill">{skill}</div>
+												)
+											})
+										}
+									</div>
+									<div class="job-footer">
+										<div class="job-date">{job.date}</div>
+										<div class="save">Save</div>
+									</div>
+								</div>
+							)
+						})
+					}
 				</div>
 			</div>
 			<div class="col right-sidebar">
