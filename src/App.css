@@ -1,38 +1,145 @@
-.App {
-  text-align: center;
+.row {
+	max-width: 1280px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.col {
+	flex: 1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.left-sidebar,
+.right-sidebar {
+	max-width: 308px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.box {
+	background: white;
+	padding: 15px 20px;
 }
 
-.App-link {
-  color: #61dafb;
+h2 {
+	font-size: 14px;
+	color: #091E42;
+	margin: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.contents {
+	padding: 15px 15px;
+}
+
+.row .summery {
+	color: #536777;
+	font-size: 12px;
+}
+
+.box {
+	background: white;
+	padding: 16px 25px 16px 16px;
+	border: 1px solid #ebf0f6;
+	box-shadow: 0 1px 2px 0 rgb(0 106 194 / 20%);
+	border-radius: 3px;
+}
+
+.job {
+	border: 1px solid #ebf0f6;
+	padding: 24px 24px 16px;
+	background: white;
+	border-radius: 5px;
+	box-shadow: 0 1px 2px 0 rgb(0 106 194 / 20%);
+	margin-bottom: 5px;
+	/* font-size: 12px; */
+}
+
+.job-footer {
+	display: flex;
+	justify-content: space-between;
+}
+
+.job .job-date {
+	padding: 2px 6px 2px 4px;
+	background: #f4f5f7;
+	font-size: 10px;
+	color: #091e42;
+	font-weight: 500;
+}
+
+.job .save {
+	color: #536777;
+	font-size: 12px;
+}
+
+.skills {
+	display: flex;
+	font-size: 13px;
+	margin-bottom: 15px;
+}
+
+.skills .skill {
+	font-size: 12px;
+	padding-right: 20px;
+	position: relative;
+}
+
+.skills .skill:before {
+	content: "";
+	position: absolute;
+	height: 2px;
+	width: 2px;
+	border-radius: 50%;
+	background: #536777;
+	vertical-align: middle;
+	right: 8px;
+	left: auto;
+	top: 7px;
+}
+
+.skills .skill:last-child {
+	padding: 0;
+}
+
+.skills .skill:last-child:before {
+	display: none;
+}
+
+.job .job-description {
+	font-size: 12px;
+	color: #536777;
+	margin-bottom: 10px;
+}
+
+.job .job-meta {
+	display: flex;
+	margin-bottom: 3px;
+}
+
+.job-meta>div {
+	font-size: 12px;
+	color: #536777;
+	padding-right: 15px;
+}
+
+.company-name {
+	margin-bottom: 5px;
+}
+
+.company-name a {
+	color: #091e42;
+	text-decoration: none;
+	font-size: 12px;
+}
+
+.job .job-title {
+	font-size: 16px;
+	color: #091e42;
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+
+.job img {
+	width: 50px;
+	height: 50px;
+	box-sizing: border-box;
+	float: right;
 }
